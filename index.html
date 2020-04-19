@@ -52,7 +52,16 @@
 			body.template-about #site-nav ul li a:hover,
 			body.template-about #site-nav li:hover > a {border-bottom: 1px solid  ;}
 		}
-																	</style><style type="text/css" id="suidobashi-header-css">
+														.search-header,
+		.show-mobile-search .search-header,
+		.show-desktop-search .show-mobile-search .search-header,
+		.show-desktop-search .search-header,
+		.search-toggle {display: none !important;}
+		@media screen and (min-width: 1150px) {.menu-container {right: 70px;}}
+						#site-header {display: inline-block;}
+		#site-header a {display: block; width: 50%;}
+		#site-header img {display: block;}
+					</style><style type="text/css" id="suidobashi-header-css">
 			#site-title h1,
 		#site-title h2.site-description {
 			display: none;
